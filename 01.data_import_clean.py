@@ -139,5 +139,7 @@ dataiter = iter(train_loader)
 
 x, y = next(dataiter)
 
+# input / output 한칸씩 밀린 것 확인
 print(tokenizer.decode(x[0].tolist()))
 print(tokenizer.decode(y[0].tolist()))
+
